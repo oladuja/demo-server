@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../includes/head.ejs')%>
+
+  <body>
+    <%- include('../includes/nav.ejs')%>
+      <div class="container">
+        <h2>Add Product</h2>
+        <form action="add-product" method="POST">
+          <input type="text" id="productName" name="productName" placeholder="Enter product name" required />
+          <input type="text" id="price" name="price" placeholder="Enter price" required />
+          <input type="text" id="imageUrl" name="imageUrl" placeholder="Enter Image Url" required />
+          <input type="text" id="description" name="description" placeholder="Enter description" required />
+          <button type="submit">Submit</button>
+
+        </form>
+      </div>
+  </body>
+
+</html>
