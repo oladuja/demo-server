@@ -1,3 +1,4 @@
+const  {logger}  = require('../helpers/logger');
 const Product = require('../model/product');
 
 exports.products = (req, res, next) => {
@@ -10,6 +11,11 @@ exports.shop = (req, res, next) => {
             prods: products, docTitle: 'All Products',
         });
     });
+};
+
+exports.getProduct = (req, res, next) => {
+    console.log(req.params);
+    res.send(req.params);
 };
 
 exports.index = (req, res, next) => {

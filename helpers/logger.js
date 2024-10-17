@@ -1,3 +1,3 @@
-var logger = require('./logger').createLogger();
+const logger = require('logger');
 
-exports.logger = logger;
+exports.logger = logger.createLogger();
